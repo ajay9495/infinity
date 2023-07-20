@@ -1,0 +1,31 @@
+
+
+.mainWrapper{
+    background-color: #afafaf;
+    background: url('../../../../Assets/Images/heroBanner.webp');
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    min-height: 40vw;
+    aspect-ratio: 3/1;
+    padding: 0rem 0rem 0rem 10rem;
+}
+
+
+@media (max-width:576px) {
+
+    .mainWrapper{
+        background-color: #afafaf;
+        background: url('../../../../Assets/Images/heroBannerMobile.webp');
+        background-size: cover;
+        background-position: right;
+        width: 100%;
+        min-height: 40vw;
+        aspect-ratio: 10/15;
+        padding: 10rem 0rem 0rem 0rem;
+    }
+
+}
+
+
+

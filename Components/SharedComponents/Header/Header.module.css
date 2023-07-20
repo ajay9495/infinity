@@ -1,0 +1,160 @@
+ 
+.headerWrapper{
+    background-color: #fff;
+    height: fit-content;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}
+
+
+.logo{
+    width: 7rem;
+    height: auto;
+}
+
+.navWrapper{
+    margin-left: 5rem;
+    
+}
+
+.navItem{
+    width: fit-content;
+    height: 3rem;
+    font-size: 1rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+
+
+}
+
+.navText{
+    height: 100%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+          
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;  
+}
+
+.highlight{
+    height: 0.1rem;
+    width: 0rem;
+    margin-left: calc(100% - 2rem);
+    background-color: #d169e6;
+    transition: width 0.3s ease-out;
+
+}
+
+.navItem:hover .highlight{
+    width: 2rem;
+}
+
+.navItem:hover .navText{
+    color: #d169e6;
+}
+
+.arrowUp{
+    margin-top: -0.5rem;
+    transform: rotate(180deg);
+    height: fit-content;
+    width: fit-content;
+}
+
+
+.menuWrapper{
+    height: fit-content;
+    width: 4rem;
+    /* background-color: #5646bf; */
+    /* gap: 0.2rem; */
+    display: block;
+}
+
+.menuSubRow1{
+    /* background-color: #c81515; */
+    width: 100%;
+    height: 5px;
+    
+}
+
+.menuSubRow2{
+    /* background-color: #c81515; */
+    width: 100%;
+    height: 5px;
+
+}
+
+.menuSubRow3{
+    /* background-color: #c81515; */
+    width: 100%;
+    height: 5px;
+
+}
+
+.menuSub1{
+    background-color: #d169e6;
+    width: 1.5rem;
+    height: 2.5px;
+    transition: transform 0.2s ease-out;
+}
+
+.menuSub2{
+    background-color: #d169e6;
+    width: 1.5rem;
+    height: 2.5px;
+    transition: transform 0.2s ease-out;
+}
+
+.menuSub3{
+    background-color: #d169e6;
+    width: 1.5rem;
+    height: 2.5px;
+    transition: transform 0.2s ease-out;
+}
+
+
+
+.menuWrapper:hover .menuSub1{
+    transform: translateX(1.5rem);
+}
+
+.menuWrapper:hover .menuSub2{
+    transform: translateX(1rem);
+}
+
+.menuWrapper:hover .menuSub3{
+    transform: translateX(0.5rem);
+}
+
+
+@media (max-width:576px) {
+    
+    .navWrapper{
+        display: none;
+    }
+
+    .menuWrapper{
+        width: 1.5rem;
+    }
+
+    .menuWrapper:hover .menuSub1{
+        transform: translateX(0rem);
+    }
+    
+    .menuWrapper:hover .menuSub2{
+        transform: translateX(0rem);
+    }
+    
+    .menuWrapper:hover .menuSub3{
+        transform: translateX(0rem);
+    }
+
+}

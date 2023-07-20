@@ -1,0 +1,80 @@
+
+
+.mainWrapper{
+    /* background-color: #0d0931; */
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* border: 1px solid #000; */
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;  
+}
+
+.closeButton{
+    height: fit-content;
+    width: fit-content;
+    /* background-color: #fff; */
+    position: fixed;
+    z-index: 15;
+    right: 0rem;
+    top: 0rem;
+    padding: 3rem 3rem 3rem 3rem;
+}
+
+.leftSection{
+    min-height: 100vh;
+    background-color: #151e37;
+    /* transform: translateX(0%); */
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: 0.5s; 
+    opacity: 0;
+}
+
+
+.rightSection{
+    min-height: 100vh;
+    background-color: #ed4700;
+    /* transform: translateX(0%); */
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    padding: 5rem 0rem 0rem 0rem;
+}
+
+.rightSub{
+    padding: 0rem 3rem 0rem 3rem;
+    font-size: 1.5rem;
+    color: #fff;
+    /* border: 1px solid #000; */
+    height: 4rem;
+}
+
+.menuIcon{
+    transition: transform 0.1s ease;
+}
+
+.rightSub:hover{
+    cursor: pointer;
+    
+}
+
+.rightSub:active{
+    font-size: 1.55rem;
+}
+
+.rightSub:hover .menuIcon{
+    transform: translateX(0.5rem);
+}
+
+
+
+

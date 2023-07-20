@@ -1,0 +1,49 @@
+.mainWrapper{
+    background-color: #2d3d4b;
+    /* background-color: #ffffff; */
+
+}
+
+.innerWrapper{
+    /* width: 90%; */
+    height: fit-content;
+    padding: 3rem 0rem 3rem 0rem;
+    /* border-top: 1px solid #2e2b2a56; */
+}
+
+.head{
+    color: #ffffff;
+    /* color: #605f5f; */
+    font-family:  sans-serif;
+}
+
+.labels{
+    color: #ffffff;
+    /* color: #605f5f; */
+    font-family:  sans-serif;
+}
+
+.labels:hover{
+    text-decoration: underline;
+}
+
+
+.addressLabels{
+    color: #ffffff;
+    /* color: #605f5f; */
+    font-family:  sans-serif;
+}
+
+
+
+@media (max-width: 576px) {
+  
+    .innerWrapper{
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+
+
+
