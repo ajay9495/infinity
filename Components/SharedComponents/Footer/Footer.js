@@ -3,46 +3,84 @@ import Col from '../../BaseComponents/Col/Col';
 import Box from '../../BaseComponents/Box/Box';
 
 import styles from './Footer.module.css';
+import Link from 'next/link';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { FaInstagramSquare } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <Row globalStyles={'bo  rx-center'} localStyles={styles.mainWrapper} >
-      <Row  globalStyles={'bo w-10 g-5'} localStyles={styles.innerWrapper} >
-        <Col id={'footerMenuSection'} globalStyles={'bo  pl-5 g-4'}  >
-          <Box  globalStyles={'bo txt-s  txt-bold-m'}  localStyles={styles.head}>
-            FOOTER MENU
+    
+    <Col  globalStyles={'bo cx-center p-3'} localStyles={styles.mainWrapper} >
+      <Row  globalStyles={'bo w-11 p-4 g-3-s'} localStyles={styles.topSection} >
+        <Row  globalStyles={'bo g-3'}  >
+          <Box  globalStyles={'bo'}  >
+            <Link href={'/'} className={'txt-link'}>
+              <Box  globalStyles={'bo txt-s txt-white'}  >
+                Home
+              </Box>
+            </Link>
           </Box>
-          <Box  globalStyles={'bo txt-s '}  localStyles={styles.labels}>
-            About Us
+          <Box  globalStyles={'bo'}  >
+            <Link href={'/works'} className={'txt-link'}>
+              <Box  globalStyles={'bo txt-s txt-white'}  >
+                Our Works
+              </Box>
+            </Link>
           </Box>
-          <Box  globalStyles={'bo txt-s '}  localStyles={styles.labels}>
-            Terms Of Services
+          <Box  globalStyles={'bo'}  >
+            <Link href={'/about'} className={'txt-link'}>
+              <Box  globalStyles={'bo txt-s txt-white'}  >
+                About Us
+              </Box>
+            </Link>
           </Box>
-          <Box  globalStyles={'bo txt-s '}  localStyles={styles.labels}>
-            Privacy Policy
+          <Box  globalStyles={'bo'}  >
+            <Link href={'/contact'} className={'txt-link'}>
+              <Box  globalStyles={'bo txt-s txt-white'}  >
+                Contact Us
+              </Box>
+            </Link>
           </Box>
-        </Col>
-        <Col id={'addressSection'}  globalStyles={'bo  pl-5 g-4'}  >
-          <Box  globalStyles={'bo txt-s  txt-bold-m'}  localStyles={styles.head}>
-            ADDRESS
+        </Row>
+        <Row  globalStyles={'bo ml-5 ml-0-s g-3'}  >
+          <Box  globalStyles={'bo'}  >
+            <Link href={''} className={'txt-link'}>
+              <FaFacebookF fontSize={'1rem'} color='#fff' />
+            </Link>
           </Box>
-          <Box  globalStyles={'bo txt-s '}  localStyles={styles.addressLabels}>
-            C-7/38, Surya Hospital Road,
+          <Box  globalStyles={'bo'}  >
+            <Link href={''} className={'txt-link'}>
+              <FaTwitter fontSize={'1rem'} color='#fff' />
+            </Link>
           </Box>
-          <Box  globalStyles={'bo txt-s '}  localStyles={styles.addressLabels}>
-            Near Indian Oil Petrol Pump,
+          <Box  globalStyles={'bo'}  >
+            <Link href={''} className={'txt-link'}>
+              <FaInstagramSquare fontSize={'1rem'} color='#fff' />
+            </Link>          
           </Box>
-          <Box  globalStyles={'bo txt-s '}  localStyles={styles.addressLabels}>
-            Gunjan - Vapi 396195
-          </Box>          
-          <Box  globalStyles={'bo txt-s '}  localStyles={styles.addressLabels}>
-            Phone : 9495873393
-          </Box> 
-          <Box  globalStyles={'bo txt-s '}  localStyles={styles.addressLabels}>
-            Email : junaidalatoor@gmail.com
-          </Box> 
-        </Col>
-      </Row> 
-    </Row>
+        </Row>
+      </Row>
+      <Row  globalStyles={'bo w-11 p-4'}  >
+        <Row  globalStyles={'bo g-3'}  >
+          <Box  globalStyles={'bo'}  >
+            <Link href={'/'} className={'txt-link'}>
+              <Box  globalStyles={'bo txt-s txt-white'}  >
+                Pune
+              </Box>
+            </Link>
+          </Box>
+          <Box  globalStyles={'bo'}  >
+            <Link href={'/works'} className={'txt-link'}>
+              <Box  globalStyles={'bo txt-s txt-white'}  >
+                Nagpur
+              </Box>
+            </Link>
+          </Box>
+        </Row>
+      </Row>
+    </Col>
+
+
   );
 }

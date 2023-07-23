@@ -27,10 +27,13 @@ export default function Header() {
 
     <Col>
       <Row id={'mainWrapper'} globalStyles={'bo p-3 rx-center'} localStyles={styles.headerWrapper}>
-        <Row  globalStyles={'bo w-10 ry-center'}  >
-            <Box id={'logo'}  globalStyles={'bo'}  >
-              <Image src={logo} alt={'logo'} className={styles.logo} />
-            </Box>
+        <Row  globalStyles={'bo w-11 ry-center'}  >
+            <Link href={'/'} >
+              <Box id={'logo'}  globalStyles={'bo'}  >
+                <Image src={logo} alt={'logo'} className={styles.logo} />
+              </Box>
+            </Link>
+
             <Row id={'navWrapper'}  globalStyles={'bo g-4'} localStyles={styles.navWrapper} >
               <Col  globalStyles={'bo '} localStyles={styles.navItem} >
                 <div className={styles.highlight}></div>
@@ -52,11 +55,27 @@ export default function Header() {
               <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
+                  <Link href={'/works'} className={'txt-link'} >
+                    OUR WORKS
+                  </Link>
+                </div>
+              </Col>
+              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
+                <div className={styles.highlight}></div>
+                <div className={styles.navText} >
+                  <Link href={'/about'} className={'txt-link'} >
+                    ABOUT US
+                  </Link>
+                </div>
+              </Col>
+              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
+                <div className={styles.highlight}></div>
+                <div className={styles.navText} >
                   <Link href={'/contact'} className={'txt-link'} >
                     CONTACT
                   </Link>
                 </div>
-              </Col>
+              </Col>              
             </Row>
             <Box id={'menu'} globalStyles={'bo pull-right'} localStyles={styles.menuWrapper} onClick={Events.toggleMenuExpand} >
               <Row id={'menuSubRow1'} localStyles={styles.menuSubRow1} >

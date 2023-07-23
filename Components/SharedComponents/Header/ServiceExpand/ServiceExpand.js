@@ -12,15 +12,15 @@ export default function ServiceExpand() {
       <Box  globalStyles={'bo '} localStyles={styles.navItem} >
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
-          <Link href={'/contact'} className={'txt-link'} >
-            Web Development
+          <Link href={'/development'} className={'txt-link'} >
+            Development
           </Link>
         </div>
       </Box>
       <Box  globalStyles={'bo '} localStyles={styles.navItem} >
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
-          <Link href={'/contact'} className={'txt-link'} >
+          <Link href={'/ui'} className={'txt-link'} >
             UI/UX Design
           </Link>        
         </div>
@@ -28,32 +28,24 @@ export default function ServiceExpand() {
       <Box  globalStyles={'bo '} localStyles={styles.navItem} >
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
-          <Link href={'/contact'} className={'txt-link'} >
-            Software Development
+          <Link href={'/blockchain'} className={'txt-link'} >
+            Blockchain, Crypto
           </Link>        
         </div>
       </Box>
       <Box  globalStyles={'bo '} localStyles={styles.navItem} >
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
-          <Link href={'/contact'} className={'txt-link'} >
-            ERP, ERM, CMS
+          <Link href={'/ai'} className={'txt-link'} >
+            Artificial Intelligence, Machine Learning, Deep Learning, Metaverse
           </Link>        
         </div>
       </Box>
       <Box  globalStyles={'bo '} localStyles={styles.navItem} >
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
-          <Link href={'/contact'} className={'txt-link'} >
-            Data Science, AI, Machine learning, Deep Learning
-          </Link>        
-        </div>
-      </Box>
-      <Box  globalStyles={'bo '} localStyles={styles.navItem} >
-        <div className={styles.highlight}></div>
-        <div className={styles.navText} >
-          <Link href={'/contact'} className={'txt-link'} >
-            Blockchain Technology
+          <Link href={'/bigdata'} className={'txt-link'} >
+            Big Data, Cloud Computing
           </Link>        
         </div>
       </Box>

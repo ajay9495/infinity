@@ -14,19 +14,22 @@ export default function WorkList() {
             id: 1,
             title:"Test Title one",
             description: "description one",
-            image:"test url"
+            image:"test url",
+            tags:["web development","UI/UX","Software Development"]
         },
         {   
             id: 2,
             title:"Test Title two",
             description: "description two",
-            image:"test url"
+            image:"test url",
+            tags:["Blockchain","Crypto"]
         },
         {   
             id: 3,
             title:"Test Title three",
             description: "description three",
-            image:"test url"
+            image:"test url",
+            tags:["Software Develpment"]
         }
 
     ];

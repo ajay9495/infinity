@@ -4,7 +4,7 @@
     height: fit-content;
     width: 20rem;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 6rem;
     left: 23rem;
     border-radius: 0.5rem;

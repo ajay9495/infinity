@@ -1,0 +1,15 @@
+
+.Content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+@media (max-width:576px) {
+
+    .Content{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+

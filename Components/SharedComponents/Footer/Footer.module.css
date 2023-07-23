@@ -34,6 +34,10 @@
     font-family:  sans-serif;
 }
 
+.topSection{
+    border-bottom: 1px solid #ffffff45;
+}
+
 
 
 @media (max-width: 576px) {

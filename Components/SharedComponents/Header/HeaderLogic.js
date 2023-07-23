@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 export default function HeaderLogic(){
 
 
+
     const [ServiceExpandState, setServiceExpandState] = useState({status:"inactive"});
 
     const [MenuExpandState,setMenuExpandState] = useState({status:"inactive"});
@@ -61,13 +62,8 @@ export default function HeaderLogic(){
 
             },100);
 
-            // animateSectionsCenter();
-            
-            console.log("hello active");
         }
-        else{
-            console.log("hello inactive");
-        }
+
 
     },[MenuExpandState])
 

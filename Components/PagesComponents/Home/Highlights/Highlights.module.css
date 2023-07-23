@@ -1,0 +1,45 @@
+
+
+.subWrapper{
+    background-color: #00000051;
+    width: 20%;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    box-sizing: border-box;
+    font-size: 1.3rem ;
+    color: #fff;
+}
+
+.links{
+    color: #fff;
+    /* border: 1px solid #000; */
+    text-decoration: none;
+}
+
+.iconWrapper{
+    width: 5rem;
+    /* border: 1px solid #000; */
+    transition: transform 0.3s ease-out;
+}
+
+.icon{
+    width: 100%;
+    height: auto;
+}
+
+.subWrapper:hover .iconWrapper{
+    transform: translateY(-0.5rem);
+}
+
+
+
+@media (max-width: 576px) {
+    .subWrapper{
+
+        width: 100%;
+    }
+    .subWrapper:hover .iconWrapper{
+        transform: translateY(0rem);
+    }
+
+}
