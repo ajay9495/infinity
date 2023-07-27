@@ -165,6 +165,7 @@
 
     .menuWrapper{
         width: 1.5rem;
+        margin-left: auto;
     }
 
     .menuWrapper:hover .menuSub1{
