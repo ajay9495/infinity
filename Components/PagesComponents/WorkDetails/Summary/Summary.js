@@ -19,7 +19,7 @@ export default function Summary({data}) {
                     data.tags.map((item,index)=>{
                       return(
                         <Box key={`workDetailsSummaryTag${index}`}  globalStyles={'bo'}  localStyles={styles.tag}>
-                          Web Development
+                          {item}
                         </Box>  
                       )
                     })

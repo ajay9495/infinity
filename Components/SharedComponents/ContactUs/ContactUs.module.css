@@ -8,6 +8,13 @@
 
 }
 
+.overlay{
+    background: linear-gradient(to top, #2d3d4b, transparent);
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid #fff; */
+}
+
 @media (max-width:576px) {
 
     .mainWrapper{

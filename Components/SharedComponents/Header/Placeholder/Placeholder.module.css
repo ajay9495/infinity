@@ -1,4 +1,16 @@
+ 
+.headerWrapper{
+    background-color: #fff;
+    height: fit-content;
+    width: 100%;
+    border-bottom: 1px solid #00000030;
+    padding: 1rem 0rem 1rem 0rem;
+    opacity: 0;
+}
+ 
+
 .logo{
-    width: 10rem;
+    width: 8rem;
     height: auto;
+    /* padding: 0.5rem 0rem 0.5rem 0rem; */
 }

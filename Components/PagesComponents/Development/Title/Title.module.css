@@ -1,16 +1,19 @@
  
 .titleSection{
     /* background-color: #afafaf; */
-    background: url('../../../../Assets/Images//serviceBanner1.webp');
+    background: url('../../../../Assets/Images/developmentBackground.webp');
     background-size: cover;
+    background-position: bottom;
     min-height: 30rem;
     aspect-ratio: 3/1;
 }
 
 .title{
+    color: #fff;
     font-size: 4rem;
     font-weight: 700;
 }
+
 
 
 
@@ -19,7 +22,8 @@
 
     .titleSection{
         /* background-color: #afafaf; */
-        background: url('../../../../Assets/Images/serviceBanner1Square.webp');
+        background: url('../../../../Assets/Images/developmentBackgroundMobile.webp');
+        background-position: bottom;
         min-height: 10rem;
         aspect-ratio: 1;
     }

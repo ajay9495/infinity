@@ -12,46 +12,58 @@ import Box from '../../../BaseComponents/Box/Box';
 import styles from './ReactSlider.module.css';
 import ServiceBanner from '../../../../Assets/Images/serviceBanner1.webp'
 import heroBanner from '../../../../Assets/Images/heroBanner.webp'
+import bitcoinBackground from '../../../../Assets/Images/bitcoinBackground.webp'
+import developmentBackground from '../../../../Assets/Images/developmentBackground.webp'
+import uiuxBackground from '../../../../Assets/Images/uiuxBackground.webp'
+import aiBackground from '../../../../Assets/Images/aiBackground.webp'
+import bigDataBackground from '../../../../Assets/Images/bigDataBackground.webp'
 
 export default function ReactSlider() {
+
 
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const prevSlide = () => {
 
-    console.log("hello slider prev");
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
   const nextSlide = () => {
 
-    console.log("hello slider next");
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
   const slides = [
     {
-      title: 'Development',
+      title: 'Web Development',
       description: 'This is slide 1 description.',
-      image: ServiceBanner,
+      image: developmentBackground,
     },
     {
       title: 'UI/UX',
       description: 'This is slide 2 description.',
-      image: heroBanner,
+      image: uiuxBackground,
     },
     {
-      title: 'BlockChain',
+      title: 'Blockchain, Crypto',
       description: 'This is slide 1 description.',
-      image: ServiceBanner,
+      image: bitcoinBackground,
     },
     {
       title: 'Artifical Intelligence, Machine Learning, DeepLearning',
       description: 'This is slide 2 description.',
-      image: heroBanner,
+      image: aiBackground,
+    },
+    {
+      title: 'BigData, Cloud',
+      description: 'This is slide 2 description.',
+      image: bigDataBackground,
     }
+
   ];
+
+  console.log(currentSlide);
 
 
   return (
@@ -59,7 +71,7 @@ export default function ReactSlider() {
     <div className={styles.slider}>
       {slides.map((slide, index) => (
         <motion.div
-          key={index}
+          key={'slider'+index}
           className={styles.slide}
           initial={{ opacity: index === currentSlide ? 1 : 0 }}
           animate={{ opacity: index === currentSlide ? 1 : 0 }}
@@ -67,11 +79,11 @@ export default function ReactSlider() {
           <Box id={'contentWrapper'}  globalStyles={'bo'} localStyles={styles.contentWrapper}  >
             
             <Box  globalStyles={'bo'}  localStyles={styles.imageWrapper}>
-              <Image src={slide.image} alt={"slider image"} className={styles.slideImage} />
+              <Image src={slide.image} alt={"slider image"} priority={true} className={styles.slideImage} />
             </Box>
 
             <Col  globalStyles={'bo w-4 g-3'} localStyles={styles.titleSection} >
-              <Box  globalStyles={'bo'} localStyles={styles.title}  >
+              <Box  globalStyles={'bo'} localStyles={(slide.title.length < 20)?styles.title:styles.titleSmall}  >
                 {slide.title}
               </Box>
             </Col>
@@ -85,7 +97,16 @@ export default function ReactSlider() {
       <div className={styles.btnRight} onClick={nextSlide}>
         <BsChevronRight className={styles.icon} />
       </div>
+      <div className={styles.sliderStatus} >
+        {
+          slides.map((slide,index)=>{
+            return(
+              <div key={'sliderStatus'+index} className={(index == currentSlide)? styles.statusItem : styles.statusItemActive} ></div>
+            )
+          })
+        }
+      </div>
     </div>
 
   );
-}
+} 

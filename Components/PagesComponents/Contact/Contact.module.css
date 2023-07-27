@@ -9,11 +9,56 @@
 }
 
 .sectionRight{
-    background-color: #f0f0f0;
-
+    background-color: #782f2f;
 }
 
-.leftTitle{
-    font-size: 3rem;
+.title{
+    margin-bottom: 0px;
 }
+
+.subtitle{
+    margin-top: -1rem;
+}
+
+.overlayPune{
+    height: 100%;
+    background: linear-gradient(to top, #2d3d4b, transparent);
+}
+
+.txtPune{
+    color: #fff;
+}
+
+.overlayNagpur{
+    height: 100%;
+    background: linear-gradient(to top, #2d3d4b, transparent);
+}
+
+.puneSection{
+    background: url('../../../Assets/Images/location1.webp');
+    background-size: cover;
+}
+
+.nagpurSection{
+    background: url('../../../Assets/Images/location2.webp');
+    background-size: cover;
+}
+
+/* @media (max-width: 576px) {
+    
+    .overlayPune{
+        background: linear-gradient(to bottom, #fff, transparent);
+    }
+
+    .txtPune{
+        color: #151e37;
+    }
+
+} */
+
+
+
+
+
+
 

@@ -4,7 +4,12 @@ import Box from '../../../BaseComponents/Box/Box';
 
 import styles from './Services.module.css';
 import Item from './Items/Items';
-import IconWebDev from '../../../../Assets/Images/iconWebdesign.svg'
+import homeDevelopmentIcon from '../../../../Assets/Images/homeDevelopmentIcon.webp'
+import homeUIIcon from '../../../../Assets/Images/homeUIIcon.webp'
+import homeBlockchainIcon from '../../../../Assets/Images/homeBlockchainIcon.webp'
+import homeBigDataIcon from '../../../../Assets/Images/homeBigDataIcon.webp'
+import homeAIIcon from '../../../../Assets/Images/homeAIIcon.webp'
+
 
 export default function Services() {
 
@@ -14,41 +19,41 @@ export default function Services() {
             title:"Web Development",
             description:"Digital transformation for organizations today requires the modernization of their data strategy Building innovative products requires an agile minds",
             url:'/development',
-            icon: IconWebDev
+            icon: homeDevelopmentIcon
         },
         {
             id:2,
             title:"UI/UX Design",
             description:"Building innovative products requires an agile mindset and leveraging of emerging technologies. We work with our clients beginning with design",
             url:'/ui',
-            icon: IconWebDev
+            icon: homeUIIcon
         },
         {
             id:3,
             title:"Blockchain, Crypto",
             description:"We are specialized in providing DevOps as a managed service to various development teams and businesses who wish to run applications on the cloud",
             url:'/blockchain',
-            icon: IconWebDev
+            icon: homeBlockchainIcon
         },
         {
             id:4,
             title:"Big Data, Cloud Computing",
             description:"We help our clients in implementing e-commerce platforms, re-architecting their solutions to go headless and integrating their solutions with legacy systems.",
             url:'/bigdata',
-            icon: IconWebDev
+            icon: homeBigDataIcon
         },
         {
             id:5,
             title:"Artifical Intelligence, Machine Learning, Deep Learning, Metaverse",
             description:"Having worked on multiple projects, our team has gathered a vast experience across various technology landscapes. ",
             url:'/ai',
-            icon: IconWebDev
+            icon: homeAIIcon
         }
     ]
 
   return (
     <Col  globalStyles={'bo pt-section  cx-center'}  >
-        <Col  globalStyles={'bo w-9  w-10-s g-5 cx-center'}  >
+        <Col  globalStyles={'bo w-9  w-11-s g-5 cx-center'}  >
             <Col id={'titleSection'} globalStyles={'bo g-3 cx-center'}  >
               <Box  globalStyles={'bo txt-title'}  >
                 Our Services

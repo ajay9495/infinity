@@ -9,27 +9,12 @@ import MenuLeftItem from './MenuLeftItem/MenuLeftItem';
 
 import {BsChevronRight} from 'react-icons/bs'
 import {AiOutlineClose} from 'react-icons/ai'
+import MenuExpandLogic from './MenuExpandLogic';
 
 
-export default function MenuExpand({events}) {
+export default function MenuExpand({events,toggleMenuExpand}) {
 
-  var data = [
-    {
-      id: 1,
-      title: "Lorem ipsum adipisicing elit. Quas, perferendis dolor sit amet consectetur",
-      image: 'sdf'
-    },
-    {
-      id: 2,
-      title: "Lorem ipsum adipisicing elit. Quas, perferendis dolor sit amet consectetur",
-      image: 'sdf'
-    },
-    {
-      id: 3,
-      title: "Lorem ipsum adipisicing elit. Quas, perferendis dolor sit amet consectetur",
-      image: 'sdf'
-    }
-  ]
+  const {data} = MenuExpandLogic();
 
   return (
     <Col  globalStyles={'bo '} localStyles={styles.mainWrapper} >
@@ -41,7 +26,7 @@ export default function MenuExpand({events}) {
             {
               data.map((item)=>{
                 return(
-                  <MenuLeftItem key={item.id} data={item} />
+                  <MenuLeftItem toggleMenuExpand={toggleMenuExpand} key={item.id} data={item} />
                 )
               })
             }

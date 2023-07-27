@@ -5,6 +5,7 @@ import Box from '../../BaseComponents/Box/Box';
 import styles from './About.module.css';
 import Header from '../../SharedComponents/Header/Header';
 import Footer from '../../SharedComponents/Footer/Footer';
+import ContactUs from '../../SharedComponents/ContactUs/ContactUs';
 
 export default function About() {
   return (
@@ -59,6 +60,7 @@ export default function About() {
               </Box>
             </Col>
         </Col>
+        <ContactUs />
         <Footer />
     </Col>
   );

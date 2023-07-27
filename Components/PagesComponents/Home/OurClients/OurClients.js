@@ -12,22 +12,22 @@ import ourClients1 from '../../../../Assets/Images/ourClients1.jpg'
 export default function OurClients() {
   return (
     <Col  globalStyles={'bo pt-section pb-section  cx-center'}  >
-        <Col  globalStyles={'bo w-9  w-10-s g-5 cx-center'}  >
+        <Col  globalStyles={'bo w-9  w-11-s g-5 cx-center'}  >
             <Col id={'titleSection'} globalStyles={'bo g-3 cx-center'}  >
               <Box  globalStyles={'bo txt-title'}  >
                 Our Clients
               </Box>
             </Col>
-            <Col  globalStyles={'bo w-12 g-4 f-nowrap f-wrap-s'}  >
+            <Col  globalStyles={'bo w-12   f-nowrap f-wrap-s'}  >
               <Box  globalStyles={'bo w-12'}  >
                 <Image src={ourClients1} alt={"our clients"} className={styles.clientListImage} />
               </Box>
               <Box  globalStyles={'bo w-12'}  >
                 <Image src={ourClients2} alt={"our clients"} className={styles.clientListImage} />
               </Box>
-              <Box  globalStyles={'bo w-12'}  >
+              {/* <Box  globalStyles={'bo w-12'}  >
                 <Image src={ourClients3} alt={"our clients"} className={styles.clientListImage} />
-              </Box>
+              </Box> */}
             </Col>
         </Col>
     </Col>

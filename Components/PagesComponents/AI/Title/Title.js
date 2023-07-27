@@ -9,6 +9,9 @@ import styles from './Title.module.css';
 import Link from 'next/link';
 
 export default function Title() {
+
+
+  
   return (
 
         <Col id={'titleSection'} globalStyles={'bo cx-center cy-center'} localStyles={styles.titleSection} >

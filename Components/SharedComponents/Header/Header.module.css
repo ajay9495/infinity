@@ -6,17 +6,21 @@
     position: fixed;
     z-index: 5;
     border-bottom: 1px solid #00000030;
+    padding: 1rem 0rem 1rem 0rem;
+    opacity: 1;
 }
-
+  
 
 .logo{
-    width: 10rem;
+    width: 8rem;
     height: auto;
+    /* padding: 0.5rem 0rem 0.5rem 0rem; */
+    
+    /* border: 1px solid #000; */
 }
 
 .navWrapper{
-    margin-left: 5rem;
-    
+    margin-right: 5rem;
 }
 
 .navItem{
@@ -44,9 +48,13 @@
         -ms-user-select: none; 
             user-select: none;  
 }
+
+.text{
+    color: #151e37;
+}
  
 .highlight{
-    height: 0.1rem;
+    height: 2px;
     width: 0rem;
     margin-left: calc(100% - 2rem);
     background-color: #ed4700;
@@ -56,6 +64,10 @@
 
 .navItem:hover .highlight{
     width: 2rem;
+}
+
+.navItem:hover .text{
+    color: #ed4700;
 }
 
 /* .navItem:hover .navText{
@@ -76,50 +88,60 @@
     /* background-color: #5646bf; */
     /* gap: 0.2rem; */
     display: block;
+    /* border: 1px solid #000; */
 }
 
-.menuSubRow1{
+.menuSubRow{
     /* background-color: #c81515; */
     width: 100%;
     height: 5px;
     
 }
 
-.menuSubRow2{
-    /* background-color: #c81515; */
-    width: 100%;
-    height: 5px;
 
-}
 
-.menuSubRow3{
-    /* background-color: #c81515; */
-    width: 100%;
-    height: 5px;
-
-}
 
 .menuSub1{
     background-color: #ed4700;
     width: 1.5rem;
-    height: 2.5px;
+    height: fit-content;
     transition: transform 0.2s ease-out;
+    /* margin-bottom: 3px; */
+    /* border-bottom: 3px solid #ed4700; */
+    /* display: flex; */
 }
 
 .menuSub2{
     background-color: #ed4700;
     width: 1.5rem;
-    height: 2.5px;
+    height: fit-content;
     transition: transform 0.2s ease-out;
+    /* margin-bottom: 3px; */
+    /* border-bottom: 3px solid #ed4700; */
+    /* display: flex; */
 }
 
 .menuSub3{
     background-color: #ed4700;
     width: 1.5rem;
-    height: 2.5px;
+    height: fit-content;
     transition: transform 0.2s ease-out;
+    /* margin-bottom: 3px; */
+    /* border-bottom: 3px solid #ed4700; */
+    /* display: flex; */
 }
 
+.menuSubInnerOrange{
+    background-color: #ed4700;
+    height: 3px;
+    width: 100%;
+}
+
+.menuSubInnerWhite{
+    background-color: #ffffff;
+    height: 3px;
+    width: 100%;
+}
 
 
 .menuWrapper:hover .menuSub1{

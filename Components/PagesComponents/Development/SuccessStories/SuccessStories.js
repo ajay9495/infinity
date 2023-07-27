@@ -14,14 +14,14 @@ export default function SuccessStories() {
     var data = [
         {
             id: 1,
-            title:"consolidate customer information and interactions",
-            description: "The client was looking at building a solution that would offer all the features offered by the client/server application without a performance drop. This was important to live up the user experience expectation of the end customers.",
+            title:"Crafting a Cutting-Edge Web Portal for Real Estate",
+            description: "client wanted a web portal for buying selling and renting of real estate properties so  we've crafted a sophisticated web portal that revolutionizes the way you buy, sell, and rent real estate properties. Our comprehensive solution brings together buyers, sellers, and renters, creating a seamless platform for all your property needs.",
             image: successStoriesImage1
         },
         {
             id: 2,
-            title:"Scalable Data Repository and Data Visualization",
-            description: "The client was looking to show important information to their customers on the dashboard itself. However, it was expected to be presented in uncluttered and easy to understand format.",
+            title:"Crafting Ticket Booking Platform for Water Park",
+            description: "client wanted a portal for booking of tickets for a waterpark it was one of the biggest water park so we developed most thrilling waterpark ticket booking platform as well as this helped business to dominate the online presence.",
             image: successStoriesImage1
         }
     ]

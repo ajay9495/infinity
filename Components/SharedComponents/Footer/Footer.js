@@ -63,19 +63,26 @@ export default function Footer() {
       </Row>
       <Row  globalStyles={'bo w-11 p-4'}  >
         <Row  globalStyles={'bo g-3'}  >
+        <Box  globalStyles={'bo'}  >
+            
+              <Box  globalStyles={'bo txt-s txt-bold-m txt-white'}  >
+                Our Locations
+              </Box>
+            
+          </Box>
           <Box  globalStyles={'bo'}  >
-            <Link href={'/'} className={'txt-link'}>
+            
               <Box  globalStyles={'bo txt-s txt-white'}  >
                 Pune
               </Box>
-            </Link>
+            
           </Box>
           <Box  globalStyles={'bo'}  >
-            <Link href={'/works'} className={'txt-link'}>
+            
               <Box  globalStyles={'bo txt-s txt-white'}  >
                 Nagpur
               </Box>
-            </Link>
+           
           </Box>
         </Row>
       </Row>

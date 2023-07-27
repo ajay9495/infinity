@@ -1,7 +1,8 @@
   .slider {
     width: 100%;
     min-height: 80vh;
-    /* background-color: #d41212; */
+    aspect-ratio: 1920/900;
+    background-color: #00121f;
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
@@ -9,7 +10,15 @@
     overflow: hidden;
     /* border: 1px solid #000; */
     position: relative;
-  }
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;   
+    
+  } 
   
   .slide {
     /* background-color: #2045a4; */
@@ -53,15 +62,22 @@
     z-index: 2;
     top: 50%;
     left: 15%;
-    transform: translateY(-50%);
+    /* transform: translateY(-calc(50%+5rem)); */
+    transform: translateY(calc(-50% - 2.5rem));
+    /* border: 1px solid #000; */
   }
 
   .title{
-    font-size: 3rem;
+    color: #ffffff;
+    font-size: 4.5rem;
     font-weight: 700;
   }
 
-
+  .titleSmall{
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 700;
+  }
 
   .icon{
     font-size: 1rem;
@@ -75,15 +91,15 @@
     z-index: 1;
     left: 2%;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: #ffffff84;
+    transform: translateY(calc(-50% - 2.5rem));
+    background-color: #ffffff32;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .btnLeft:hover {
-    background-color: #ffffff;
+    background-color: #ffffff68;
   }
 
   .btnRight {
@@ -94,19 +110,51 @@
     z-index: 1;
     right: 2%;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: #ffffff4a;
+    transform: translateY(calc(-50% - 2.5rem));
+    background-color: #ffffff32;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .btnRight:hover {
-    background-color: #ffffff;
+    background-color: #ffffff68;
   }
 
+  .sliderStatus{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    bottom: 5%;
+    /* background-color: #ffffff32; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+ 
+  .statusItem{
+    background-color: #fff;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+  }
 
+  .statusItemActive{
+    background-color: #937c7c;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+  }
 
+@media (max-width:576px) {
+  
+  .slider{
+    display: none;
+  }
 
+}
 
   

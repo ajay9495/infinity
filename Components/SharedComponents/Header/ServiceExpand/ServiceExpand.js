@@ -13,7 +13,7 @@ export default function ServiceExpand() {
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
           <Link href={'/development'} className={'txt-link'} >
-            Development
+            <span className={styles.text} >Development</span>
           </Link>
         </div>
       </Box>
@@ -21,7 +21,7 @@ export default function ServiceExpand() {
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
           <Link href={'/ui'} className={'txt-link'} >
-            UI/UX Design
+            <span className={styles.text} >UI/UX Design</span>
           </Link>        
         </div>
       </Box>
@@ -29,7 +29,7 @@ export default function ServiceExpand() {
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
           <Link href={'/blockchain'} className={'txt-link'} >
-            Blockchain, Crypto
+            <span className={styles.text} >Blockchain, Crypto</span>
           </Link>        
         </div>
       </Box>
@@ -37,7 +37,7 @@ export default function ServiceExpand() {
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
           <Link href={'/ai'} className={'txt-link'} >
-            Artificial Intelligence, Machine Learning, Deep Learning, Metaverse
+            <span className={styles.text} >Artificial Intelligence, Machine Learning, Deep Learning, Metaverse</span>
           </Link>        
         </div>
       </Box>
@@ -45,7 +45,7 @@ export default function ServiceExpand() {
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
           <Link href={'/bigdata'} className={'txt-link'} >
-            Big Data, Cloud Computing
+            <span className={styles.text} >Big Data, Cloud Computing</span>
           </Link>        
         </div>
       </Box>

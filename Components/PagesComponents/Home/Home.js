@@ -14,6 +14,7 @@ import Slider from './TitleSection/Slider/Slider';
 import InfiniteSlider from './InfiniteSlider/InfiniteSlider';
 import Highlights from './Highlights/Highlights';
 import ReactSlider from './ReactSlider/ReactSlider';
+import ReactSliderMobile from './ReactSliderMobile/ReactSliderMobile';
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
     <Col  globalStyles={'bo '}  >
         <Header />
         <ReactSlider />
+        <ReactSliderMobile />
         <Services />
         <OurClients />
         <Highlights />

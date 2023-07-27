@@ -18,45 +18,27 @@ import Placeholder from './Placeholder/Placeholder';
 import ServiceExpand from './ServiceExpand/ServiceExpand';
 import HeaderLogic from './HeaderLogic'
 import MenuExpand from './MenuExpand/MenuExpand';
-
+ 
 export default function Header() {
 
-  const {ServiceExpandState, MenuExpandState, Events} = HeaderLogic();
+  const {ServiceExpandState, MenuExpandState, Events, toggleMenuExpand} = HeaderLogic();
 
   return (
 
     <Col>
-      <Row id={'mainWrapper'} globalStyles={'bo p-3 rx-center'} localStyles={styles.headerWrapper}>
+      <Row id={'mainWrapper'} globalStyles={'bo rx-center'} localStyles={styles.headerWrapper}>
         <Row  globalStyles={'bo w-11 ry-center'}  >
             <Link href={'/'} >
               <Box id={'logo'}  globalStyles={'bo'}  >
                 <Image src={logo} alt={'logo'} className={styles.logo} />
               </Box>
             </Link>
-
-            <Row id={'navWrapper'}  globalStyles={'bo g-4'} localStyles={styles.navWrapper} >
+            <Row id={'navWrapper'}  globalStyles={'bo g-3 pull-right'} localStyles={styles.navWrapper} >
               <Col  globalStyles={'bo '} localStyles={styles.navItem} >
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
                   <Link href={'/'} className={'txt-link'} >
-                    HOME
-                  </Link>
-                </div>
-              </Col>
-              <Col  globalStyles={'bo '} localStyles={styles.navItem} onClick={Events.toggleServiceExpand} >
-                <div className={styles.highlight}></div>
-                <Row globalStyles={'bo g-2 ry-center'} localStyles={styles.navText} >
-                  <div  >SERVICES</div>
-                  <Box  globalStyles={'bo '} localStyles={(ServiceExpandState.status == "active")&&styles.arrowUp} >
-                    <FaCaretDown />
-                  </Box>
-                </Row>
-              </Col>
-              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
-                <div className={styles.highlight}></div>
-                <div className={styles.navText} >
-                  <Link href={'/works'} className={'txt-link'} >
-                    OUR WORKS
+                    <span className={styles.text}>HOME</span>
                   </Link>
                 </div>
               </Col>
@@ -64,7 +46,32 @@ export default function Header() {
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
                   <Link href={'/about'} className={'txt-link'} >
-                    ABOUT US
+                    <span className={styles.text}>ABOUT US</span>
+                  </Link>
+                </div>
+              </Col>
+              <Col  globalStyles={'bo '} localStyles={styles.navItem} onClick={Events.toggleServiceExpand} >
+                <div className={styles.highlight}></div>
+                <Row globalStyles={'bo g-2 ry-center'} localStyles={styles.navText} >
+                  <span className={styles.text}>SERVICES</span>
+                  <Box  globalStyles={'bo '} localStyles={(ServiceExpandState.status == "active")&&styles.arrowUp} >
+                    <FaCaretDown className={styles.text} />
+                  </Box>
+                </Row>
+              </Col>
+              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
+                <div className={styles.highlight}></div>
+                <div className={styles.navText} >
+                  <Link href={'/products'} className={'txt-link'} >
+                    <span className={styles.text}>PRODUCTS</span>
+                  </Link>
+                </div>
+              </Col>
+              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
+                <div className={styles.highlight}></div>
+                <div className={styles.navText} >
+                  <Link href={'/works'} className={'txt-link'} >
+                    <span className={styles.text}>OUR WORKS</span>
                   </Link>
                 </div>
               </Col>
@@ -72,30 +79,30 @@ export default function Header() {
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
                   <Link href={'/contact'} className={'txt-link'} >
-                    CONTACT
+                    <span className={styles.text}>CONTACT</span>
                   </Link>
                 </div>
               </Col>              
             </Row>
-            <Box id={'menu'} globalStyles={'bo pull-right'} localStyles={styles.menuWrapper} onClick={Events.toggleMenuExpand} >
-              <Row id={'menuSubRow1'} localStyles={styles.menuSubRow1} >
-                <div id={'menuSub1'} className={styles.menuSub1} >
-                </div>
-              </Row>
-              <Row id={'menuSubRow2'} localStyles={styles.menuSubRow2} >
-                <div id={'menuSub2'} className={styles.menuSub2} >
-                </div>              
-              </Row>
-              <Row id={'menuSubRow3'} localStyles={styles.menuSubRow3} >
-                <div id={'menuSub3'} className={styles.menuSub3} >
-                </div>
-              </Row>
+            <Box id={'menu'} globalStyles={'bo '} localStyles={styles.menuWrapper} onClick={Events.toggleMenuExpand} >
+              <div id={'menuSub1'} className={styles.menuSub1} >
+                <div className={styles.menuSubInnerOrange} ></div>
+                <div className={styles.menuSubInnerWhite} ></div>
+              </div>
+              <div id={'menuSub2'} className={styles.menuSub2} >
+                <div className={styles.menuSubInnerOrange} ></div>
+                <div className={styles.menuSubInnerWhite} ></div>
+              </div>              
+              <div id={'menuSub3'} className={styles.menuSub3} >
+                <div className={styles.menuSubInnerOrange} ></div>
+                <div className={styles.menuSubInnerWhite} ></div>
+              </div>
             </Box>
         </Row>
       </Row>
       <Placeholder />
       {(ServiceExpandState.status == "active")&& <ServiceExpand />}
-      {(MenuExpandState.status == "active")&& <MenuExpand events={Events} />}
+      {(MenuExpandState.status == "active")&& <MenuExpand toggleMenuExpand={toggleMenuExpand} events={Events} />}
     </Col>
 
 

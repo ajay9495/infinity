@@ -21,7 +21,7 @@ export default function Blockchain() {
         <Col id={'contentWrapper'} globalStyles={'bo w-12 cx-center pb-section'}  >
             <Col id={'contentInnerWrapper'} globalStyles={'bo w-9 w-10-s'}  >
               <Overview />
-              <SuccessStories />
+              {/* <SuccessStories /> */}
             </Col>
         </Col>
         <ContactUs />

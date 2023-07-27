@@ -14,7 +14,7 @@ export default function ItemLogic(){
         router.push({
             pathname: '/work-details',
             query: {data: JSON.stringify(data)}
-        });
+        },'/work-details');
     } 
     
     return {goToWorkDetails}

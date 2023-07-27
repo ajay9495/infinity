@@ -1,13 +1,16 @@
  
 .titleSection{
     /* background-color: #afafaf; */
-    background: url('../../../../Assets/Images//serviceBanner1.webp');
+    background: url('../../../../Assets/Images/bitcoinBackground.webp');
     background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
     min-height: 30rem;
     aspect-ratio: 3/1;
 }
 
 .title{
+    color: #fff;
     font-size: 4rem;
     font-weight: 700;
 }
@@ -19,7 +22,10 @@
 
     .titleSection{
         /* background-color: #afafaf; */
-        background: url('../../../../Assets/Images/serviceBanner1Square.webp');
+        background: url('../../../../Assets/Images/bitcoinBackgroundMobile.webp');
+        background-size: cover;
+        background-position-x: left;
+        background-position-y: bottom;
         min-height: 10rem;
         aspect-ratio: 1;
     }

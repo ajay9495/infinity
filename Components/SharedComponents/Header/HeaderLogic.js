@@ -45,7 +45,6 @@ export default function HeaderLogic(){
         leftSection = document.getElementById('menuLeftSection');
         RightSection = document.getElementById('menuRightSection');
     
-        console.log("animateSectionsCenter");
 
         RightSection.style.transform = `translateX(${0}%)`;
         leftSection.style.transform = `translateX(${0}%)`;
@@ -73,7 +72,7 @@ export default function HeaderLogic(){
     };
 
     return{
-        ServiceExpandState, MenuExpandState, Events
+        ServiceExpandState, MenuExpandState, Events, toggleMenuExpand
     }
 
 } 

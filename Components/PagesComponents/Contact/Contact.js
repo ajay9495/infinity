@@ -16,10 +16,13 @@ export default function Contact() {
       <Header />
         <Col  globalStyles={'bo  '}  >
           <Col id={'topSection'} globalStyles={'bo w-12 g-5 cx-center pt-section pb-section'}  >
-            <Col id={'title'}  globalStyles={'bo w-9 txt-bold-m cx-center'} localStyles={styles.leftTitle} >
+            <Col id={'title'}  globalStyles={'bo w-9 cx-center txt-title'} localStyles={styles.title} >
+              Contact Us
+            </Col>
+            <Col id={'subtitle'}  globalStyles={'bo w-9 txt-m  cx-center'} localStyles={styles.subtitle} >
               We are here to help u and your business
             </Col>
-            <Col  globalStyles={'bo w-6 w-9'}  >
+            <Col  globalStyles={'bo w-5 w-9-s'}  >
               <Col id={'inputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
                 <Col  globalStyles={'bo '}  >
                   <input placeholder='Name' className={styles.inputField} />
@@ -38,56 +41,54 @@ export default function Contact() {
               </Col>              
             </Col>
           </Col>
-          <Row id={'bottomSection'}  globalStyles={'bo w-12 pt-section pb-section'} localStyles={styles.sectionRight} >
-            <Col  globalStyles={'bo w-6 w-12-s mt-5-s cx-center cy-center'}  >
-              <Col  globalStyles={'bo  g-4'}  >
-                <Col id={'rightTitleSection'} globalStyles={'bo w-12 cx-left'}  >
-                    <Box id={'rightTitle'}  globalStyles={'bo  txt-l'}  >
-                      Pune
+          <Row id={'bottomSection'}  globalStyles={'bo w-12 '} localStyles={styles.sectionRight} >
+            <Col id={'puneSection'}  globalStyles={'bo w-6 w-12-s   '} localStyles={styles.puneSection} >
+              <Col  globalStyles={'bo w-12 cx-center cy-center pt-section pb-section'} localStyles={styles.overlayPune}  >
+                <Col  globalStyles={'bo  g-4'}  >
+                  <Col id={'rightTitleSection'} globalStyles={'bo w-12 cx-left'}  >
+                      <Box id={'rightTitle'}  globalStyles={'bo  txt-l txt-white'} localStyles={styles.txtPune} >
+                        Pune
+                      </Box>
+                  </Col>
+                  <Col id={'rightInputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
+                    <Box  globalStyles={'bo txt-m txt-white'}  localStyles={styles.txtPune} >
+                      34, Rajbhavan, First Floor,
                     </Box>
-                </Col>
-                <Col id={'rightInputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    C-7/38, Surya Hospital Road,
-                  </Box>
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    Near Indian Oil Petrol Pump,
-                  </Box>
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    Gunjan - Vapi 396195
-                  </Box>
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    Phone : 9495873393
-                  </Box>
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    Gunjan - Vapi 396195
-                  </Box>
+                    <Box  globalStyles={'bo txt-m txt-white'}  localStyles={styles.txtPune} >
+                      Clarke Town Kadbi Chowk,
+                    </Box>
+                    <Box  globalStyles={'bo txt-m txt-white'}  localStyles={styles.txtPune} >
+                      Nagpur - 440013
+                    </Box>
+                    <Box  globalStyles={'bo txt-m txt-white'}  localStyles={styles.txtPune} >
+                      Phone : 9028546180
+                    </Box>
+                  </Col>
                 </Col>
               </Col>
             </Col>
-            <Col  globalStyles={'bo w-6 w-12-s mt-5-s cx-center cy-center'}  >
-              <Col  globalStyles={'bo  g-4'}  >
-                <Col id={'rightTitleSection'} globalStyles={'bo w-12 cx-left'}  >
-                    <Box id={'rightTitle'}  globalStyles={'bo  txt-l'}  >
-                      Nagpur
+            <Col id={'nagpurSection'}  globalStyles={'bo w-6 w-12-s  '}  localStyles={styles.nagpurSection} >
+              <Col  globalStyles={'bo w-12 cx-center cy-center pt-section pb-section'} localStyles={styles.overlayNagpur}  >  
+                <Col  globalStyles={'bo  g-4'}  >
+                  <Col id={'rightTitleSection'} globalStyles={'bo w-12 cx-left'}  >
+                      <Box id={'rightTitle'}  globalStyles={'bo  txt-l txt-white'}  >
+                        Nagpur
+                      </Box>
+                  </Col>
+                  <Col id={'rightInputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
+                    <Box  globalStyles={'bo txt-m txt-white'}  >
+                      Runwal Seagull,
                     </Box>
-                </Col>
-                <Col id={'rightInputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    C-7/38, Surya Hospital Road,
-                  </Box>
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    Near Indian Oil Petrol Pump,
-                  </Box>
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    Gunjan - Vapi 396195
-                  </Box>
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    Phone : 9495873393
-                  </Box>
-                  <Box  globalStyles={'bo txt-m txt-grey'}  >
-                    Gunjan - Vapi 396195
-                  </Box>
+                    <Box  globalStyles={'bo txt-m txt-white'}  >
+                      Handewadi RD, near Magarpatta,
+                    </Box>
+                    <Box  globalStyles={'bo txt-m txt-white'}  >
+                      Hadapsar, Pune - 411028
+                    </Box>
+                    <Box  globalStyles={'bo txt-m txt-white'}  >
+                      Phone : 9420377188
+                    </Box>
+                  </Col>
                 </Col>
               </Col>
             </Col>

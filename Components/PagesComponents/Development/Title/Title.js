@@ -17,7 +17,7 @@ export default function Title() {
                 Development
               </Box>
               <Link href={'/contact'} className='txt-link'>
-                <Row  globalStyles={'bo g-3 btn-primary'} >
+                <Row  globalStyles={'bo g-3 btn-primary'}   >
                   <Box  globalStyles={'bo '}  >
                       Get In Touch
                   </Box>

@@ -16,6 +16,7 @@ import Summary from './Summary/Summary';
 
 export default function WorkDetails() {
 
+
   const INITIAL_WORKDATA = {
     title :"inital title",
     description:"initial description",
@@ -25,19 +26,55 @@ export default function WorkDetails() {
   const router = useRouter(); 
   const [WorkData,setWorkData] = useState(INITIAL_WORKDATA);
   
+
+
   useEffect(()=>{
 
-    var { data } = router.query;
+    if (router.query && router.query.data) {
 
-    if(data){
-      setWorkData(JSON.parse(data));
+      setWorkData(JSON.parse(router.query.data));
     }
     else{
       router.push('/works');
-      
     }
+    
 
-  },[]);
+  },[router.query.data]);
+
+
+  var stringArray = [];
+  var pargraph = "";
+  var pargraphArray = [];
+  function convertStringToParagraphs(string){
+      
+      pargraphArray = [];
+      stringArray = [];
+
+      stringArray = string.split('.');
+      
+      stringArray.map((item,index)=>{
+
+          pargraph = pargraph + item;
+
+          if((index % 2 === 0)&&(index != 0)){
+
+              pargraphArray.push(pargraph);
+              pargraph = "";
+
+          }
+          else if(index == (stringArray.length - 1)){
+
+              pargraphArray.push(pargraph);
+              pargraph = "";
+
+          }
+          
+              
+      });
+
+      return pargraphArray;
+
+  }
 
 
   
@@ -51,7 +88,11 @@ export default function WorkDetails() {
                   Overview
                 </Box>
                 <Box  globalStyles={'bo '}  >
-                    {WorkData.description} 
+                    {
+                      convertStringToParagraphs(WorkData.description).map((item,index)=>{
+                        return(<p key={"workDetailsParagraph"+index}>{item}</p>)
+                      })
+                    }
                 </Box>
             </Col>
         </Col>
