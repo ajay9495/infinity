@@ -5,9 +5,9 @@ import Col from '../../../BaseComponents/Col/Col';
 import Box from '../../../BaseComponents/Box/Box';
 
 import styles from './OurClients.module.css';
-import ourClients3 from '../../../../Assets/Images/ourClients3.jpg'
-import ourClients2 from '../../../../Assets/Images/ourClients2.jpg'
-import ourClients1 from '../../../../Assets/Images/ourClients1.jpg'
+import ourClients3 from '../../../../Assets/Images/ourClients3.webp'
+import ourClients2 from '../../../../Assets/Images/ourClients2.webp'
+import ourClients1 from '../../../../Assets/Images/ourClients1.webp'
 
 export default function OurClients() {
   return (
