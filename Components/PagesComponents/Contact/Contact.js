@@ -10,38 +10,57 @@ import ContactLogic from './ContactLogic';
 
 export default function Contact() {
 
-  const {sendMessage, setName, setPhone, setMessage} = ContactLogic();
+  const {sendMessage, setName, setPhone, setMessage, IsMessageSent, reloadPage} = ContactLogic();
 
 
   return (
     <Col  globalStyles={'bo '}  >
       <Header />
         <Col  globalStyles={'bo  '}  >
-          <Col id={'topSection'} globalStyles={'bo w-12 g-5 cx-center pt-section pb-section'}  >
-            <Col id={'title'}  globalStyles={'bo w-9 cx-center txt-title'} localStyles={styles.title} >
-              Contact Us
-            </Col>
-            <Col id={'subtitle'}  globalStyles={'bo w-9 txt-m  cx-center'} localStyles={styles.subtitle} >
-              We are here to help u and your business
-            </Col>
-            <Col  globalStyles={'bo w-5 w-9-s'}  >
-              <Col id={'inputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
-                <Col  globalStyles={'bo '}  >
-                  <input placeholder='Name' className={styles.inputField} onChange={(e)=>{ setName(e.target.value) }} />
+          <Col id={'topSection'} globalStyles={'bo w-12 pt-section pb-section'}  >
+            
+            {
+              (IsMessageSent != 'sent')?
+                <Col id={'inputComponent'}  globalStyles={'bo w-12 g-5 cx-center'}   >
+                  <Col id={'title'}  globalStyles={'bo w-9 cx-center txt-title'} localStyles={styles.title} >
+                    Contact Us
+                  </Col>
+                  <Col id={'subtitle'}  globalStyles={'bo w-9 txt-m  cx-center'} localStyles={styles.subtitle} >
+                    We are here to help u and your business
+                  </Col>
+                  <Col  globalStyles={'bo w-5 w-9-s'}  >
+                    <Col id={'inputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
+                      <Col  globalStyles={'bo '}  >
+                        <input placeholder='Name' className={styles.inputField} onChange={(e)=>{ setName(e.target.value) }} />
+                      </Col>
+                      <Col  globalStyles={'bo '}  >
+                        <input placeholder='Phone Number' className={styles.inputField} onChange={(e)=>{ setPhone(e.target.value) }} />
+                      </Col>
+                      <Col  globalStyles={'bo '}  >
+                        <textarea placeholder='How can we help you ?' className={styles.inputField} onChange={(e)=>{ setMessage(e.target.value) }} />
+                      </Col>
+                      <Col  globalStyles={'bo cx-center'}  >
+                        <Box  globalStyles={'bo btn-long'} onClick={sendMessage} >
+                          {(IsMessageSent == 'sending')? "Sending..." : "Submit"}
+                        </Box>
+                      </Col>
+                    </Col>              
+                  </Col>
                 </Col>
-                <Col  globalStyles={'bo '}  >
-                  <input placeholder='Phone Number' className={styles.inputField} onChange={(e)=>{ setPhone(e.target.value) }} />
-                </Col>
-                <Col  globalStyles={'bo '}  >
-                  <textarea placeholder='How can we help you ?' className={styles.inputField} onChange={(e)=>{ setMessage(e.target.value) }} />
-                </Col>
-                <Col  globalStyles={'bo cx-center'}  >
-                  <Box  globalStyles={'bo btn-long'} onClick={sendMessage} >
-                    Submit
+              :
+                <Col  id={'successComponent'}  globalStyles={'bo bo w-12 g-5 cx-center pt-section pb-section'}  >
+                  <Col id={'title'}  globalStyles={'bo w-9 cx-center'} localStyles={styles.successMessage} >
+                    Message Sent Successfully !
+                  </Col>
+                  <Col id={'subtitle'}  globalStyles={'bo w-9 txt-m  cx-center'} localStyles={styles.subtitle} >
+                    Our support team will be in touch with you shortly.
+                  </Col>
+                  <Box  globalStyles={'bo btn-primary'} onClick={reloadPage} >
+                    Okay
                   </Box>
                 </Col>
-              </Col>              
-            </Col>
+            }
+            
           </Col>
           <Row id={'bottomSection'}  globalStyles={'bo w-12 '} localStyles={styles.sectionRight} >
             <Col id={'nagpurSection'}  globalStyles={'bo w-6 w-12-s   '} localStyles={styles.puneSection} >

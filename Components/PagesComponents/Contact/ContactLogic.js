@@ -16,11 +16,15 @@ export default function ContactLogic(){
     const [Name,setName] = useState('');
     const [Phone,setPhone] = useState('');
     const [Message,setMessage] = useState('');
+    const [IsMessageSent, setIsMessageSent] = useState("initial");
     
 
     function sendMessage(e){
 
+
         e.preventDefault();
+
+        setIsMessageSent("sending");
 
         if((Name)&&((Phone)&&((Message)))){
 
@@ -36,8 +40,7 @@ export default function ContactLogic(){
             emailjs.send( SERVICE_ID, TEMPLATE_ID, templateParams, API_KEY)
             .then((result) => {
 
-                alert("Successfully sumitted the message");
-                window.location.reload();
+                setIsMessageSent("sent");
 
             }, (error) => {
 
@@ -51,8 +54,12 @@ export default function ContactLogic(){
 
     }
 
+    function reloadPage(){
+        window.location.reload();
+    }
+
     
-    return {sendMessage, setName, setPhone, setMessage}
+    return {sendMessage, setName, setPhone, setMessage, IsMessageSent, reloadPage}
 
 
 }
