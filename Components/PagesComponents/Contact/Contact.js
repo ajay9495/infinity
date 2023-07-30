@@ -63,7 +63,7 @@ export default function Contact() {
                       Nagpur - 440013
                     </Box>
                     <Box  globalStyles={'bo txt-m txt-white'}  localStyles={styles.txtPune} >
-                      Phone : 9028546180
+                      Phone : 9420377188
                     </Box>
                   </Col>
                 </Col>
@@ -88,7 +88,7 @@ export default function Contact() {
                       Hadapsar, Pune - 411028
                     </Box>
                     <Box  globalStyles={'bo txt-m txt-white'}  >
-                      Phone : 9420377188
+                      Phone : 9028546180
                     </Box>
                   </Col>
                 </Col>
