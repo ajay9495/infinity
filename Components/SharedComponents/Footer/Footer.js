@@ -5,14 +5,14 @@ import Box from '../../BaseComponents/Box/Box';
 import styles from './Footer.module.css';
 import Link from 'next/link';
 import { FaFacebookF } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { FaInstagramSquare } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
     
     <Col  globalStyles={'bo cx-center p-3'} localStyles={styles.mainWrapper} >
-      <Row  globalStyles={'bo w-11 p-4 g-3-s'} localStyles={styles.topSection} >
+      <Row  globalStyles={'bo w-11 p-4 g-4-s ry-center'} localStyles={styles.topSection} >
         <Row  globalStyles={'bo g-3'}  >
           <Box  globalStyles={'bo'}  >
             <Link href={'/'} className={'txt-link'}>
@@ -43,20 +43,20 @@ export default function Footer() {
             </Link>
           </Box>
         </Row>
-        <Row  globalStyles={'bo ml-5 ml-0-s g-3'}  >
+        <Row  globalStyles={'bo ml-5 ml-0-s g-3 g-4-s '}  >
           <Box  globalStyles={'bo'}  >
-            <Link href={''} className={'txt-link'}>
-              <FaFacebookF fontSize={'1rem'} color='#fff' />
+            <Link href={'https://www.facebook.com/profile.php?id=100092721050256&mibextid=ZbWKwL/'} className={'txt-link'}>
+              <FaFacebookF fontSize={'1.5rem'} color='#fff' />
             </Link>
           </Box>
           <Box  globalStyles={'bo'}  >
-            <Link href={''} className={'txt-link'}>
-              <FaTwitter fontSize={'1rem'} color='#fff' />
+            <Link href={'https://www.linkedin.com/company/infinitifytechnologies/'} className={'txt-link'}>
+              <FaLinkedinIn fontSize={'1.5rem'} color='#fff' />
             </Link>
           </Box>
           <Box  globalStyles={'bo'}  >
-            <Link href={''} className={'txt-link'}>
-              <FaInstagramSquare fontSize={'1rem'} color='#fff' />
+            <Link href={'https://www.instagram.com/infinitifytechnologies/'} className={'txt-link'}>
+              <FaInstagram fontSize={'1.5rem'} color='#fff' />
             </Link>          
           </Box>
         </Row>
@@ -71,18 +71,18 @@ export default function Footer() {
             
           </Box>
           <Box  globalStyles={'bo'}  >
-            
+            <Link href={'/contact#puneSection'} className='txt-Link'>
               <Box  globalStyles={'bo txt-s txt-white'}  >
                 Pune
               </Box>
-            
+            </Link>
           </Box>
           <Box  globalStyles={'bo'}  >
-            
+            <Link href={'/contact#puneSection'} className='txt-Link'>
               <Box  globalStyles={'bo txt-s txt-white'}  >
                 Nagpur
               </Box>
-           
+            </Link>
           </Box>
         </Row>
       </Row>

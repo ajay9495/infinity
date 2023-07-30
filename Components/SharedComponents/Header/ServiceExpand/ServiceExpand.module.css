@@ -2,11 +2,11 @@
 .mainWrapper{
     background-color: #fff;
     height: fit-content;
-    width: 20rem;
+    width: 17rem;
     position: fixed;
     z-index: 3;
     top: 5.5rem;
-    right: 30rem;
+    right: 34rem;
     border-radius: 0.5rem;
     padding: 2rem 1rem 2rem 1rem;
     box-shadow: 5px 5px 20px 0px #0000005c;
@@ -15,7 +15,7 @@
 .navItem{
     width: fit-content;
     height: fit-content;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
     box-sizing: border-box;
@@ -30,7 +30,9 @@
     height: 2px;
     width: 0px;
     margin-left: calc(100% - 2rem);
-    background-color: #ed4700;
+    background-color: #22bed7;
+    /* background-color: #ed4700; */
+
     transition: width 0.3s ease-out;
 
 }
@@ -40,7 +42,9 @@
 }
 
 .navItem:hover .text{
-    color: #ed4700;
+    /* color: #ed4700; */
+    color: #22bed7;
+
 }
 
 

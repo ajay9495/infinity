@@ -28,7 +28,7 @@ export default function ReactSliderMobile() {
     
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
-
+ 
   const nextSlide = () => {
 
     
@@ -37,7 +37,7 @@ export default function ReactSliderMobile() {
 
   const slides = [
     {
-      title: 'Web Development',
+      title: 'WEB DEVELOPMENT',
       description: 'This is slide 1 description.',
       image: developmentBackgroundMobile,
     },
@@ -47,17 +47,17 @@ export default function ReactSliderMobile() {
       image: uiuxBackgroundMobile,
     },
     {
-      title: 'Blockchain, Crypto',
+      title: 'BLOCKCHAIN, CRYPTO',
       description: 'This is slide 1 description.',
       image: bitcoinBackgroundMobile,
     },
     {
-      title: 'Artifical Intelligence, Machine Learning, DeepLearning',
+      title: 'ARTIFICIAL INTELLIGENCE',
       description: 'This is slide 2 description.',
       image: aiBackgroundMobile,
     },
     {
-      title: 'BigData, Cloud',
+      title: 'BIG DATA',
       description: 'This is slide 2 description.',
       image: bigDataBackgroundMobile,
     }

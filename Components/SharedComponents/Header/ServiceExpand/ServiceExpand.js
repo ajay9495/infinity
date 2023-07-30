@@ -37,7 +37,7 @@ export default function ServiceExpand() {
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
           <Link href={'/ai'} className={'txt-link'} >
-            <span className={styles.text} >Artificial Intelligence, Machine Learning, Deep Learning, Metaverse</span>
+            <span className={styles.text} >Artificial Intelligence</span>
           </Link>        
         </div>
       </Box>
@@ -45,7 +45,7 @@ export default function ServiceExpand() {
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
           <Link href={'/bigdata'} className={'txt-link'} >
-            <span className={styles.text} >Big Data, Cloud Computing</span>
+            <span className={styles.text} >Big Data</span>
           </Link>        
         </div>
       </Box>

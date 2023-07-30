@@ -30,11 +30,12 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
     /* border: 1px solid #000; */
+    cursor: pointer;
 }
 
 .navText{
     height: 100%;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     /* border: 1px solid #000; */
     box-sizing: border-box;
     display: flex;
@@ -51,13 +52,22 @@
 
 .text{
     color: #151e37;
+    font-size: 1.1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    border-left: 2px solid #fff;
+}
+
+.serviceIcon{
+    color: #151e37;
+    font-size: 1.1rem;
+
 }
  
 .highlight{
     height: 2px;
     width: 0rem;
     margin-left: calc(100% - 2rem);
-    background-color: #ed4700;
+    background-color: #22bed7;
     transition: width 0.3s ease-out;
 
 }
@@ -66,13 +76,21 @@
     width: 2rem;
 }
 
+
+
 .navItem:hover .text{
-    color: #ed4700;
+    /* color: #ed4700; */
+    color: #22bed7;
+
 }
 
-/* .navItem:hover .navText{
-    color: #ed4700 !important;
-} */
+.navItem:hover .serviceIcon{
+    /* color: #ed4700; */
+    color: #22bed7;
+
+}
+
+
 
 .arrowUp{
     margin-top: -0.5rem;
@@ -85,14 +103,11 @@
 .menuWrapper{
     height: fit-content;
     width: 1.5rem;
-    /* background-color: #5646bf; */
-    /* gap: 0.2rem; */
+
     display: block;
-    /* border: 1px solid #000; */
 }
 
 .menuSubRow{
-    /* background-color: #c81515; */
     width: 100%;
     height: 5px;
     
@@ -102,37 +117,33 @@
 
 
 .menuSub1{
-    background-color: #ed4700;
+    background-color: #fff;
     width: 1.5rem;
-    height: fit-content;
+    height: 6px;
     transition: transform 0.2s ease-out;
-    /* margin-bottom: 3px; */
-    /* border-bottom: 3px solid #ed4700; */
-    /* display: flex; */
+
 }
 
 .menuSub2{
-    background-color: #ed4700;
+    background-color: #fff;
     width: 1.5rem;
-    height: fit-content;
+    height: 6px;
     transition: transform 0.2s ease-out;
-    /* margin-bottom: 3px; */
-    /* border-bottom: 3px solid #ed4700; */
-    /* display: flex; */
+
 }
 
 .menuSub3{
-    background-color: #ed4700;
+    background-color: #fff;
     width: 1.5rem;
-    height: fit-content;
+    height: 6px;
     transition: transform 0.2s ease-out;
-    /* margin-bottom: 3px; */
-    /* border-bottom: 3px solid #ed4700; */
-    /* display: flex; */
+
 }
 
 .menuSubInnerOrange{
-    background-color: #ed4700;
+    /* color: #22bed7; */
+    /* background-color: #ed4700; */
+    background-color: #22bed7;
     height: 3px;
     width: 100%;
 }

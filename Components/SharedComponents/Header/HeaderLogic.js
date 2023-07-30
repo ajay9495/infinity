@@ -1,5 +1,6 @@
 
 import { staticPageGenerationTimeout } from "@/next.config";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function HeaderLogic(){
@@ -9,6 +10,9 @@ export default function HeaderLogic(){
     const [ServiceExpandState, setServiceExpandState] = useState({status:"inactive"});
 
     const [MenuExpandState,setMenuExpandState] = useState({status:"inactive"});
+
+    var router = useRouter();
+
 
     function toggleServiceExpand(event){
 
@@ -51,6 +55,15 @@ export default function HeaderLogic(){
 
     }
 
+    function goTo(destination){
+
+        router.push({
+            pathname: destination
+        });
+    }
+
+
+
     useEffect(()=>{
 
         if(MenuExpandState.status == "active"){
@@ -68,7 +81,7 @@ export default function HeaderLogic(){
 
 
     const Events = {
-        toggleServiceExpand, toggleMenuExpand
+        toggleServiceExpand, toggleMenuExpand, goTo
     };
 
     return{

@@ -2,6 +2,7 @@
 
 .mainWrapper{
     width: 100%;
+    border: 1px solid #ffffff;
     box-sizing: border-box;
     box-shadow: 5px 5px 20px #00000050;
           
@@ -13,13 +14,13 @@
             user-select: none;   
     
 }
-
+ 
 .mainWrapper:hover{
-    background-color: #0000001b;
-    /* border: 1px solid #ED4700; */
-    box-shadow: 5px 5px 20px #00000050;
+    /* background-color: #0000001b; */
+    border: 1px solid #ED4700;
+    box-shadow: 5px 5px 20px #00000081;
     /* transform: translate(50px, 20px) rotate(45deg) scale(1.5); */
-    /* transform: scale(1.01); */
+    transform: scale(1.01);
 }
 
 .icon{
@@ -52,8 +53,11 @@
     }
     
     .mainWrapper:hover{
-        background-color: #fff;
-        
+        /* background-color: #0000001b; */
+        border: 1px solid #ffffff;
+        box-shadow: 5px 5px 20px #00000050;
+        /* transform: translate(50px, 20px) rotate(45deg) scale(1.5); */
+        transform: scale(1);
     }
 
     .title{

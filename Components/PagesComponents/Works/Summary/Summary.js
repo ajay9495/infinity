@@ -3,8 +3,12 @@ import Col from '../../../BaseComponents/Col/Col';
 import Box from '../../../BaseComponents/Box/Box';
 
 import styles from './Summary.module.css';
+import SummaryLogic from './SummaryLogic';
 
 export default function Summary() {
+
+    const {Projects, Clients, Team} = SummaryLogic();
+
   return (
     <Row  globalStyles={'bo'} localStyles={styles.mainWrapper} >
         <Row  globalStyles={'bo w-12 rx-center'} localStyles={styles.overlay}  >
@@ -15,7 +19,7 @@ export default function Summary() {
                 <Row id={'stats'}  globalStyles={'bo g-5'}  >
                     <Col id={'projects'} globalStyles={'bo g-3'}  >
                         <Box  globalStyles={'bo '} localStyles={styles.summaryItems}  >
-                            1000+
+                            {Projects}+
                         </Box>
                         <Box  globalStyles={'bo '} localStyles={styles.summaryItems} >
                             Projects
@@ -23,7 +27,7 @@ export default function Summary() {
                     </Col>
                     <Col id={'clients'} globalStyles={'bo g-3'}  >
                         <Box  globalStyles={'bo '} localStyles={styles.summaryItems}  >
-                            150+ 
+                            {Clients}+ 
                         </Box>
                         <Box  globalStyles={'bo '} localStyles={styles.summaryItems} >
                             Clients
@@ -31,10 +35,10 @@ export default function Summary() {
                     </Col>
                     <Col id={'awards'} globalStyles={'bo g-3'}  >
                         <Box  globalStyles={'bo '} localStyles={styles.summaryItems}  >
-                            15
+                            {Team}+
                         </Box>
                         <Box  globalStyles={'bo '} localStyles={styles.summaryItems} >
-                            Awards
+                            Team
                         </Box>
                     </Col>
                 </Row>

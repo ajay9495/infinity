@@ -1,12 +1,17 @@
 
 .mainWrapper{
     background-color: #fff;
-    /* background-color: #700d0d; */
+    box-shadow: 0px 0px 25px 0px #00000053;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
 }
  
 .mainWrapper:hover{
-    box-shadow: 0px 0px 25px 0px #00000053;
-    /* transform: scale(0.9); */
+    /* background-color: #0000001b; */
+    border: 1px solid #ED4700;
+    box-shadow: 5px 5px 20px #00000081;
+    /* transform: translate(50px, 20px) rotate(45deg) scale(1.5); */
+    transform: scale(1.01);
 }
 
 .imageWrapper{
@@ -24,8 +29,11 @@
 
 @media (max-width:576px) {
     .mainWrapper:hover{
-        box-shadow: 0px 0px 25px 0px #ffffff00;
-        /* transform: scale(0.9); */
+        /* background-color: #0000001b; */
+        border: 1px solid #ffffff;
+        box-shadow: 5px 5px 20px #00000050;
+        /* transform: translate(50px, 20px) rotate(45deg) scale(1.5); */
+        transform: scale(1);
     }
 }
 

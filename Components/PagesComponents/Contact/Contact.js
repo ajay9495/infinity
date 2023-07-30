@@ -6,10 +6,12 @@ import styles from './Contact.module.css';
 import { useState } from 'react';
 import Header from '../../SharedComponents/Header/Header';
 import Footer from '../../SharedComponents/Footer/Footer';
+import ContactLogic from './ContactLogic';
 
 export default function Contact() {
 
-    const [message,setMessage] = useState("Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ipsa nesciunt quisquam ab ea eligendi in aliquam, eius repudiandae dolorem repellendus alias velit saepe maxime fugiat aliquid, ullam, at odio?");
+  const {sendMessage, setName, setPhone, setMessage} = ContactLogic();
+
 
   return (
     <Col  globalStyles={'bo '}  >
@@ -25,16 +27,16 @@ export default function Contact() {
             <Col  globalStyles={'bo w-5 w-9-s'}  >
               <Col id={'inputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
                 <Col  globalStyles={'bo '}  >
-                  <input placeholder='Name' className={styles.inputField} />
+                  <input placeholder='Name' className={styles.inputField} onChange={(e)=>{ setName(e.target.value) }} />
                 </Col>
                 <Col  globalStyles={'bo '}  >
-                  <input placeholder='Phone Number' className={styles.inputField} />
+                  <input placeholder='Phone Number' className={styles.inputField} onChange={(e)=>{ setPhone(e.target.value) }} />
                 </Col>
                 <Col  globalStyles={'bo '}  >
-                  <textarea placeholder='How can we help you ?' className={styles.inputField} />
+                  <textarea placeholder='How can we help you ?' className={styles.inputField} onChange={(e)=>{ setMessage(e.target.value) }} />
                 </Col>
                 <Col  globalStyles={'bo cx-center'}  >
-                  <Box  globalStyles={'bo btn-long'}  >
+                  <Box  globalStyles={'bo btn-long'} onClick={sendMessage} >
                     Submit
                   </Box>
                 </Col>
@@ -42,12 +44,12 @@ export default function Contact() {
             </Col>
           </Col>
           <Row id={'bottomSection'}  globalStyles={'bo w-12 '} localStyles={styles.sectionRight} >
-            <Col id={'puneSection'}  globalStyles={'bo w-6 w-12-s   '} localStyles={styles.puneSection} >
+            <Col id={'nagpurSection'}  globalStyles={'bo w-6 w-12-s   '} localStyles={styles.puneSection} >
               <Col  globalStyles={'bo w-12 cx-center cy-center pt-section pb-section'} localStyles={styles.overlayPune}  >
                 <Col  globalStyles={'bo  g-4'}  >
                   <Col id={'rightTitleSection'} globalStyles={'bo w-12 cx-left'}  >
-                      <Box id={'rightTitle'}  globalStyles={'bo  txt-l txt-white'} localStyles={styles.txtPune} >
-                        Pune
+                      <Box id={'rightTitle'}  globalStyles={'bo  txt-l txt-white'}  >
+                        <div className={styles.bottomSectionsTitle}>Nagpur</div>
                       </Box>
                   </Col>
                   <Col id={'rightInputSection'} globalStyles={'bo w-12 py-3 g-4'}  >
@@ -67,12 +69,12 @@ export default function Contact() {
                 </Col>
               </Col>
             </Col>
-            <Col id={'nagpurSection'}  globalStyles={'bo w-6 w-12-s  '}  localStyles={styles.nagpurSection} >
+            <Col id={'puneSection'}  globalStyles={'bo w-6 w-12-s  '}  localStyles={styles.nagpurSection} >
               <Col  globalStyles={'bo w-12 cx-center cy-center pt-section pb-section'} localStyles={styles.overlayNagpur}  >  
                 <Col  globalStyles={'bo  g-4'}  >
                   <Col id={'rightTitleSection'} globalStyles={'bo w-12 cx-left'}  >
                       <Box id={'rightTitle'}  globalStyles={'bo  txt-l txt-white'}  >
-                        Nagpur
+                        <div className={styles.bottomSectionsTitle}>Pune</div>
                       </Box>
                   </Col>
                   <Col id={'rightInputSection'} globalStyles={'bo w-12 py-3 g-4'}  >

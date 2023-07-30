@@ -10,7 +10,7 @@ import MenuLeftItem from './MenuLeftItem/MenuLeftItem';
 import {BsChevronRight} from 'react-icons/bs'
 import {AiOutlineClose} from 'react-icons/ai'
 import MenuExpandLogic from './MenuExpandLogic';
-
+ 
 
 export default function MenuExpand({events,toggleMenuExpand}) {
 
@@ -31,11 +31,11 @@ export default function MenuExpand({events,toggleMenuExpand}) {
               })
             }
           </Col>
-          <Col id={'menuRightSection'} globalStyles={'bo w-6 w-12-s  p-3 g-3 g-5-s '} localStyles={styles.rightSection}  >
+          <Col id={'menuRightSection'} globalStyles={'bo w-6 w-12-s  p-3 g-5 g-5-s '} localStyles={styles.rightSection}  >
             <Link href={'/development'} className={styles.link}>
               <Row  globalStyles={'bo  g-3 ry-center f-nowrap'} localStyles={styles.rightSub}  >
                 <Col  globalStyles={'bo '} localStyles={styles.menuText} >
-                  Development
+                  Web Development
                 </Col>
                 <Col  globalStyles={'bo '}  localStyles={styles.menuIcon}>
                   <BsChevronRight fontSize={'1.3rem'}/>
@@ -45,7 +45,7 @@ export default function MenuExpand({events,toggleMenuExpand}) {
             <Link href={'/ui'} className={styles.link}>
               <Row  globalStyles={'bo  g-3 ry-center f-nowrap'} localStyles={styles.rightSub}  >
                 <Col  globalStyles={'bo '} localStyles={styles.menuText}  >
-                  UI/UX Design
+                  UI/UX 
                 </Col>
                 <Col  globalStyles={'bo '}  localStyles={styles.menuIcon}>
                   <BsChevronRight fontSize={'1.3rem'}/>
@@ -65,7 +65,7 @@ export default function MenuExpand({events,toggleMenuExpand}) {
             <Link href={'/ai'} className={styles.link}>
               <Row  globalStyles={'bo  g-3 ry-center f-nowrap'} localStyles={styles.rightSub}  >
                 <Col  globalStyles={'bo '} localStyles={styles.menuText}  >
-                  Artificial Intelligence, Machine Learning, Deep Learning, Metaverse
+                  Artificial Intelligence
                 </Col>
                 <Col  globalStyles={'bo '}  localStyles={styles.menuIcon}>
                   <BsChevronRight fontSize={'1.3rem'}/>
@@ -75,7 +75,7 @@ export default function MenuExpand({events,toggleMenuExpand}) {
             <Link href={'/bigdata'} className={styles.link}>
               <Row  globalStyles={'bo  g-3 ry-center f-nowrap'} localStyles={styles.rightSub}  >
                 <Col  globalStyles={'bo '} localStyles={styles.menuText}  >
-                  Big Data, Cloud Computing
+                  Big Data
                 </Col>
                 <Col  globalStyles={'bo '}  localStyles={styles.menuIcon}>
                   <BsChevronRight fontSize={'1.3rem'}/>

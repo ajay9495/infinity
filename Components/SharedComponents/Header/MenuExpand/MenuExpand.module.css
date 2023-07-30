@@ -42,7 +42,10 @@
 
 .rightSection{
     min-height: 100vh;
-    background-color: #ed4700;
+    background-color: #2d3d4b;
+    /* background: linear-gradient(to top,#2d3d4b, #c076cf); */
+
+    /* background-color: #ed4700; */
     /* transform: translateX(0%); */
     transform: translateX(100%);
     transition-property: transform;
@@ -51,7 +54,7 @@
 }
 
 .rightSub{
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 0rem 3rem 0rem 5rem;
     font-size: 1.5rem;
     color: #fff;
     /* border: 1px solid #000; */
@@ -59,7 +62,8 @@
 }
 
 .menuText{
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+    font-size: 1.8rem;
 }
 
 .link{

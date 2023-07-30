@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
 
-    <Col>
+    <Col> 
       <Row id={'mainWrapper'} globalStyles={'bo rx-center'} localStyles={styles.headerWrapper}>
         <Row  globalStyles={'bo w-11 ry-center'}  >
             <Link href={'/'} >
@@ -34,20 +34,16 @@ export default function Header() {
               </Box>
             </Link>
             <Row id={'navWrapper'}  globalStyles={'bo g-3 pull-right'} localStyles={styles.navWrapper} >
-              <Col  globalStyles={'bo '} localStyles={styles.navItem} >
+              <Col  globalStyles={'bo '} localStyles={styles.navItem} onClick={()=>{ Events.goTo('/') }}>
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
-                  <Link href={'/'} className={'txt-link'} >
                     <span className={styles.text}>HOME</span>
-                  </Link>
                 </div>
               </Col>
-              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
+              <Col  globalStyles={'bo '} localStyles={styles.navItem}   onClick={()=>{ Events.goTo('/about') }}>
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
-                  <Link href={'/about'} className={'txt-link'} >
                     <span className={styles.text}>ABOUT US</span>
-                  </Link>
                 </div>
               </Col>
               <Col  globalStyles={'bo '} localStyles={styles.navItem} onClick={Events.toggleServiceExpand} >
@@ -55,11 +51,11 @@ export default function Header() {
                 <Row globalStyles={'bo g-2 ry-center'} localStyles={styles.navText} >
                   <span className={styles.text}>SERVICES</span>
                   <Box  globalStyles={'bo '} localStyles={(ServiceExpandState.status == "active")&&styles.arrowUp} >
-                    <FaCaretDown className={styles.text} />
+                    <FaCaretDown className={styles.serviceIcon} />
                   </Box>
                 </Row>
               </Col>
-              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
+              <Col  globalStyles={'bo '} localStyles={styles.navItem}  onClick={()=>{ Events.goTo('/products') }} >
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
                   <Link href={'/products'} className={'txt-link'} >
@@ -67,7 +63,7 @@ export default function Header() {
                   </Link>
                 </div>
               </Col>
-              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
+              <Col  globalStyles={'bo '} localStyles={styles.navItem}  onClick={()=>{ Events.goTo('/works') }} >
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
                   <Link href={'/works'} className={'txt-link'} >
@@ -75,7 +71,7 @@ export default function Header() {
                   </Link>
                 </div>
               </Col>
-              <Col  globalStyles={'bo '} localStyles={styles.navItem}  >
+              <Col  globalStyles={'bo '} localStyles={styles.navItem}  onClick={()=>{ Events.goTo('/contact') }} >
                 <div className={styles.highlight}></div>
                 <div className={styles.navText} >
                   <Link href={'/contact'} className={'txt-link'} >

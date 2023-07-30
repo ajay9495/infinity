@@ -2,8 +2,9 @@
 
 .mainWrapper{
     /* background-color: #afafaf; */
-    background: url('../../../../Assets/Images/worksBanner.webp');
+    background: url('../../../../Assets/Images/workSummary.webp');
     background-size: cover;
+    background-position: center;
     min-height: 30rem;
     aspect-ratio: 3/1;
 }
@@ -13,14 +14,29 @@
 }
 
 .title{
+    width: fit-content;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 700;
+    position: relative;
+    padding-bottom: 0.5rem;
 }
+
+/* .title::after {
+
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 5px;
+    width: 5rem;
+    background-color: #ed4700;
+} */
+
 
 .summaryItems{
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 

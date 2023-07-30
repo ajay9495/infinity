@@ -21,7 +21,7 @@ import bigDataBackground from '../../../../Assets/Images/bigDataBackground.webp'
 export default function ReactSlider() {
 
 
-
+ 
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const prevSlide = () => {
@@ -36,7 +36,7 @@ export default function ReactSlider() {
 
   const slides = [
     {
-      title: 'Web Development',
+      title: 'WEB DEVELOPMENT',
       description: 'This is slide 1 description.',
       image: developmentBackground,
     },
@@ -46,24 +46,23 @@ export default function ReactSlider() {
       image: uiuxBackground,
     },
     {
-      title: 'Blockchain, Crypto',
+      title: 'BLOCKCHAIN, CRYPTO',
       description: 'This is slide 1 description.',
       image: bitcoinBackground,
     },
     {
-      title: 'Artifical Intelligence, Machine Learning, DeepLearning',
+      title: 'ARTIFICIAL INTELLIGENCE',
       description: 'This is slide 2 description.',
       image: aiBackground,
     },
     {
-      title: 'BigData, Cloud',
+      title: 'BIG DATA',
       description: 'This is slide 2 description.',
       image: bigDataBackground,
     }
 
   ];
 
-  console.log(currentSlide);
 
 
   return (
