@@ -35,9 +35,14 @@ export default function ContactLogic(){
     
             emailjs.send( SERVICE_ID, TEMPLATE_ID, templateParams, API_KEY)
             .then((result) => {
-                console.log("hello email js response");
-                console.log(result.text);
+
+                alert("Successfully sumitted the message");
+                window.location.reload();
+
             }, (error) => {
+
+                alert("Could not submit the message, There was an error")
+
                 console.log(error.text);
             });
 
