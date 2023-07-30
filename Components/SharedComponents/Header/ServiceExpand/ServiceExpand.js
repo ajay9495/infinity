@@ -13,7 +13,7 @@ export default function ServiceExpand() {
         <div className={styles.highlight}></div>
         <div className={styles.navText} >
           <Link href={'/development'} className={'txt-link'} >
-            <span className={styles.text} >Development</span>
+            <span className={styles.text} >Web Development</span>
           </Link>
         </div>
       </Box>
