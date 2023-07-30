@@ -14,7 +14,7 @@ export default function Title() {
           <Col  globalStyles={'bo w-9'}  >
             <Col  globalStyles={'bo w-9 g-5'}  >
               <Box  globalStyles={'bo '} localStyles={styles.title} >
-                Big Data, Cloud Computing
+                Big Data
               </Box>
               <Link href={'/contact'} className='txt-link'>
                 <Row  globalStyles={'bo g-3 btn-primary'} >

@@ -18,7 +18,7 @@ export default function Title() {
           <Col  globalStyles={'bo w-9 '}  >
             <Col  globalStyles={'bo w-7 w-11-s g-5'}  >
               <Box  globalStyles={'bo '} localStyles={styles.title} >
-                Artificial Intelligence, Machine Learning, Deep Learning, Metaverse
+                Artificial Intelligence
               </Box>
               <Link href={'/contact'} className='txt-link'>
                 <Row  globalStyles={'bo g-3 btn-primary'} >
