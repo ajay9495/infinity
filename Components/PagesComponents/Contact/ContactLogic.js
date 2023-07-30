@@ -24,11 +24,10 @@ export default function ContactLogic(){
 
         e.preventDefault();
 
-        setIsMessageSent("sending");
 
         if((Name)&&((Phone)&&((Message)))){
 
-            console.log("hello send message");
+            setIsMessageSent("sending");
 
             const templateParams = {
                 from_name: Name,
